@@ -4,13 +4,13 @@ from sqlalchemy.orm import Session
 from twilio.rest import Client
 from twilio.request_validator import RequestValidator
 import openai
-import stripe
 from datetime import datetime
 import os
 from dotenv import load_dotenv
 from models import Base, Appointment, engine, SessionLocal
 from transformers import pipeline
 import json
+from mpesa_integration import MpesaAPI
 
 # Load environment variables
 load_dotenv()
@@ -24,8 +24,8 @@ twilio_client = Client(os.getenv('TWILIO_ACCOUNT_SID'), os.getenv('TWILIO_AUTH_T
 # Initialize OpenAI
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-# Initialize Stripe
-stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+# Initialize M-PESA
+mpesa = MpesaAPI()
 
 # Initialize the medical QA model
 medical_qa = pipeline('question-answering', model='microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext')
@@ -54,25 +54,6 @@ def process_medical_query(query: str):
     result = medical_qa(question=query, context=context)
     return result['answer']
 
-def create_payment_session(amount: float):
-    session = stripe.checkout.Session.create(
-        payment_method_types=['card'],
-        line_items=[{
-            'price_data': {
-                'currency': 'usd',
-                'product_data': {
-                    'name': 'Medical Appointment',
-                },
-                'unit_amount': int(amount * 100),
-            },
-            'quantity': 1,
-        }],
-        mode='payment',
-        success_url='https://your-domain.com/success',
-        cancel_url='https://your-domain.com/cancel',
-    )
-    return session
-
 @app.post("/webhook")
 async def webhook_handler(request: Request, db: Session = Depends(get_db)):
     # Validate the request is from Twilio
@@ -88,13 +69,35 @@ async def webhook_handler(request: Request, db: Session = Depends(get_db)):
 
     try:
         if "appointment" in incoming_msg:
-            # Handle appointment request
-            payment_session = create_payment_session(50.00)  # $50 appointment fee
-            response = (
-                "To book an appointment, please complete the payment using this link: "
-                f"{payment_session.url}\n"
-                "Once payment is confirmed, we'll help you schedule your appointment."
-            )
+            # Format phone number for M-PESA (remove WhatsApp prefix and format for Kenyan number)
+            phone_number = sender.replace('whatsapp:', '').replace('+', '')
+            if phone_number.startswith('254'):
+                # Initiate M-PESA payment
+                amount = 1000  # Amount in KES
+                reference = f"APPT_{datetime.now().strftime('%Y%m%d%H%M%S')}"
+                
+                payment_result = await mpesa.initiate_stk_push(
+                    phone_number=phone_number,
+                    amount=amount,
+                    reference=reference
+                )
+                
+                if payment_result.get('ResponseCode') == '0':
+                    response = (
+                        "I've sent an M-PESA payment request to your phone. "
+                        "Please enter your PIN to complete the payment. "
+                        "Once confirmed, we'll help you schedule your appointment."
+                    )
+                else:
+                    response = (
+                        "Sorry, there was an issue initiating the payment. "
+                        "Please try again later or contact support."
+                    )
+            else:
+                response = (
+                    "Sorry, M-PESA payments are only available for Kenyan phone numbers. "
+                    "Please provide a valid Kenyan phone number."
+                )
         
         elif any(keyword in incoming_msg for keyword in ["symptom", "disease", "medical", "health"]):
             # Handle medical query
@@ -123,26 +126,19 @@ async def webhook_handler(request: Request, db: Session = Depends(get_db)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/stripe-webhook")
-async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
-    payload = await request.body()
-    sig_header = request.headers.get('stripe-signature')
-
+@app.post("/mpesa-callback")
+async def mpesa_callback(request: Request, db: Session = Depends(get_db)):
+    """Handle M-PESA payment callbacks"""
     try:
-        event = stripe.Webhook.construct_event(
-            payload, sig_header, os.getenv('STRIPE_WEBHOOK_SECRET')
-        )
-
-        if event['type'] == 'checkout.session.completed':
-            session = event['data']['object']
-            # Here you would implement the logic to confirm the appointment
-            # and send a WhatsApp message to the user with next steps
-            
+        callback_data = await request.json()
+        result = mpesa.process_callback(callback_data)
+        
+        if result['status'] == 'success':
             # Create appointment record
             new_appointment = Appointment(
-                user_phone=session['metadata'].get('phone'),
+                user_phone=callback_data['Body']['stkCallback']['CallbackMetadata']['Item'][4]['Value'],
                 payment_status='completed',
-                amount_paid=session['amount_total'] / 100
+                amount_paid=result['amount']
             )
             db.add(new_appointment)
             db.commit()
@@ -151,10 +147,10 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
             twilio_client.messages.create(
                 body="Your payment has been confirmed! Please reply with your preferred appointment date and time.",
                 from_=os.getenv('TWILIO_PHONE_NUMBER'),
-                to=session['metadata'].get('phone')
+                to=f"whatsapp:+{new_appointment.user_phone}"
             )
 
-        return {"status": "success"}
+        return {"status": "success", "message": result['message']}
 
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))

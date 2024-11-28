@@ -27,6 +27,7 @@ A comprehensive WhatsApp-based AI assistant that handles medical queries, appoin
    - Stripe integration for secure payments
    - Webhook confirmation system
    - Automatic appointment confirmation
+   - M-PESA integration for East Africa region
 
 4. **Database**
    - SQLite database (easily upgradeable to PostgreSQL)
@@ -46,6 +47,7 @@ A comprehensive WhatsApp-based AI assistant that handles medical queries, appoin
      - Twilio credentials
      - OpenAI API key
      - Stripe API keys
+     - M-PESA credentials (for East Africa region)
 
 3. **Database Setup**
    ```bash
@@ -86,6 +88,39 @@ A comprehensive WhatsApp-based AI assistant that handles medical queries, appoin
    - Configure Twilio webhook URL to point to `/webhook`
    - Set up Stripe webhook to point to `/stripe-webhook`
    - Ensure proper SSL certification for production
+
+## Payment Integration
+
+### M-PESA Integration
+
+The system uses M-PESA's Daraja API for payment processing, which is widely used in Kenya and East Africa. The integration supports:
+
+1. **STK Push Payments**
+   - Direct payment requests to user's phone
+   - Real-time payment confirmation
+   - Automatic appointment scheduling after payment
+
+2. **Setup Requirements**
+   - Safaricom Developer Account
+   - M-PESA Business Short Code
+   - Consumer Key and Secret
+   - Callback URL for payment confirmation
+
+3. **Configuration**
+   ```bash
+   MPESA_BUSINESS_SHORTCODE=your_business_shortcode
+   MPESA_CONSUMER_KEY=your_consumer_key
+   MPESA_CONSUMER_SECRET=your_consumer_secret
+   MPESA_PASSKEY=your_passkey
+   MPESA_CALLBACK_URL=your_callback_url
+   ```
+
+4. **Payment Flow**
+   1. User requests appointment via WhatsApp
+   2. System initiates STK push to user's phone
+   3. User enters M-PESA PIN
+   4. Payment confirmation received via webhook
+   5. Appointment scheduling process begins
 
 ## Usage
 

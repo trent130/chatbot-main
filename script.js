@@ -238,5 +238,9 @@ function sendResponse() {
 }
 
 function playSound() {
-    audio.play();
+    const audio = document.getElementById('messageSound');
+    if (audio) {
+        audio.currentTime = 0; // Reset audio to start
+        audio.play();
+    }
 }
