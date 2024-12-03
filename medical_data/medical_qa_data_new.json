@@ -1,0 +1,158 @@
+{
+  "intents": [
+    {
+      "intent": "Introduction",
+      "examples": [
+        "could you tell me about yourself?",
+        "could you introduce yourself?",
+        "could you tell me who you are?",
+        "what are you?",
+        "who are you?",
+        "what can you do for me?",
+        "what are your services?"
+      ],
+      "response": "Hello, I am your virtual medical assistant. I can assist you with various services such as telemedicine consultations, appointment booking management, and general medical information. What would you like to know more about?"
+    },
+    {
+      "intent": "Make Appointment",
+      "examples": [
+        "I want to make an appointment",
+        "Schedule an appointment",
+        "Book a consultation",
+        "Can I set up a meeting?",
+        "I need to schedule an appointment",
+        "I need to book a consultation with a doctor",
+        "I need to book a meeting with a healthcare professional"
+      ],
+      "response": "I'll help you book an appointment. Please provide your name, phone number, preferred date/time, and any specific medical concerns you'd like to discuss."
+    },
+    {
+      "intent": "List Services",
+      "examples": [
+        "What services do you offer?",
+        "List all services",
+        "Can you tell me your services?",
+        "Available services",
+        "What are some of the services you offer?"
+      ],
+      "response": "We offer the following medical services:\n1. Telemedicine Consultations\n2. Appointment Booking\n3. Medical Information and Advice\n4. Specialist Referrals\n5. Emergency Medical Guidance\n6. Prescription Management"
+    },
+    {
+      "intent": "List Specialists",
+      "examples": [
+        "List all doctors",
+        "Show me all doctors",
+        "Can you list all doctors?",
+        "Do you have any specialists?",
+        "Can I reach a specialist?",
+        "What specialists do you have?"
+      ],
+      "response": "We have the following specialists available:\n1. Consultant Dermatologist\n2. Consultant Endoscopic Surgeons\n3. Consultant Gynecologists\n4. Consultant Orthopedic Surgeons\n5. Consultant Pediatricians\n6. Consultant Physicians\n7. Consultant Urologist"
+    },
+    {
+      "intent": "Specialist Information",
+      "examples": [
+        {
+          "specialty": "Pediatrician",
+          "questions": [
+            "what does a pediatrician do?",
+            "what is the job of a pediatrician?",
+            "what are the specialties of a pediatrician?"
+          ],
+          "response": "A pediatrician specializes in:\n1. Child growth and development\n2. Childhood vaccinations\n3. Common childhood illnesses\n4. Developmental disorders\n5. Preventive health care for children"
+        },
+        {
+          "specialty": "Dermatologist",
+          "questions": [
+            "What do dermatologists do?",
+            "What is the role of Dermatologists?",
+            "What are the specialties of a Dermatologist?"
+          ],
+          "response": "A dermatologist specializes in:\n1. Skin conditions and diseases\n2. Hair and nail disorders\n3. Cosmetic treatments\n4. Skin cancer screening\n5. Surgical procedures for skin conditions"
+        },
+        {
+          "specialty": "Gynecologist",
+          "questions": [
+            "What does a gynecologist do?",
+            "What is the job of a gynecologist?",
+            "What are the specialties of a gynecologist?"
+          ],
+          "response": "A gynecologist specializes in:\n1. Women's reproductive health\n2. Pregnancy and childbirth\n3. Menstrual disorders\n4. Fertility issues\n5. Preventive care and screenings"
+        }
+      ]
+    },
+    {
+      "intent": "Healthcare Technology",
+      "examples": [
+        "How does technology help healthcare in Africa?",
+        "What role does technology play in African healthcare?",
+        "Benefits of healthcare technology in Africa",
+        "Impact of technology on African healthcare"
+      ],
+      "response": "Technology is transforming healthcare in Africa through:\n1. Telemedicine for remote consultations\n2. Mobile health apps for patient monitoring\n3. Digital health records management\n4. AI-powered diagnostic tools\n5. SMS-based health education\n6. Mobile payment solutions for healthcare services"
+    },
+    {
+      "intent": "General Greetings",
+      "examples": [
+        "Hi",
+        "Hello",
+        "How are you?",
+        "What's up?",
+        "hey",
+        "hi there",
+        "hello there"
+      ],
+      "responses": [
+        "Hello! How can I assist you with your health today?",
+        "Hi there! How may I help you with your medical needs?",
+        "Hello! What medical assistance can I provide you today?"
+      ]
+    },
+    {
+      "intent": "General Goodbye",
+      "examples": [
+        "Goodbye",
+        "See you later",
+        "Bye",
+        "Have a nice day",
+        "Nice talking to you"
+      ],
+      "responses": [
+        "Take care of your health! Have a great day!",
+        "Goodbye! Remember to prioritize your well-being!",
+        "Thank you for consulting with me. Stay healthy!"
+      ]
+    },
+    {
+      "intent": "Contact Information",
+      "examples": [
+        "How can I contact you?",
+        "Contact details",
+        "Phone number and email",
+        "Where is your office?",
+        "Where can I find you?"
+      ],
+      "response": "You can reach our medical team at:\nPhone: 0742782395\nEmail: info@medical-assistant.com\nOperating Hours: 8am to 5pm daily"
+    }
+  ],
+  "emergency_responses": [
+    {
+      "keywords": ["emergency", "urgent", "critical", "severe pain", "accident"],
+      "response": "If you're experiencing a medical emergency, please call emergency services immediately at [EMERGENCY_NUMBER]. Do not wait for a response here."
+    },
+    {
+      "keywords": ["suicide", "self-harm", "want to die", "kill myself"],
+      "response": "If you're having thoughts of self-harm or suicide, please reach out to the suicide prevention hotline immediately at [HOTLINE_NUMBER]. You're not alone, and help is available 24/7."
+    }
+  ],
+  "medical_disclaimers": [
+    {
+      "type": "general",
+      "text": "This medical assistant provides general information and guidance only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider."
+    },
+    {
+      "type": "emergency",
+      "text": "In case of medical emergency, please call emergency services or visit the nearest emergency room immediately."
+    }
+  ]
+}

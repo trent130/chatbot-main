@@ -1,0 +1,660 @@
+{
+  "greeting_interactions": [
+    {
+      "question": "Hello",
+      "context": "Standard greeting interaction with the medical assistant",
+      "answer": "Hello! I'm your medical assistant. How can I help you today?"
+    },
+    {
+      "question": "Hi",
+      "context": "Standard greeting interaction with the medical assistant",
+      "answer": "Hi there! I'm here to help with your medical questions. What can I assist you with?"
+    },
+    {
+      "question": "Good morning",
+      "context": "Morning greeting interaction with the medical assistant",
+      "answer": "Good morning! I'm your medical assistant. How may I help you today?"
+    },
+    {
+      "question": "Good afternoon",
+      "context": "Afternoon greeting interaction with the medical assistant",
+      "answer": "Good afternoon! I'm here to help with your medical concerns. What questions do you have?"
+    },
+    {
+      "question": "Good evening",
+      "context": "Evening greeting interaction with the medical assistant",
+      "answer": "Good evening! I'm your medical assistant. How can I assist you today?"
+    },
+    {
+      "question": "How are you",
+      "context": "Casual greeting interaction with the medical assistant",
+      "answer": "I'm functioning well, thank you for asking! How can I help you with your health-related questions today?"
+    },
+    {
+      "question": "What can you do for me?",
+      "context": "User asking about assistant capabilities",
+      "answer": "I can help you with telemedicine consultations, appointment booking, medical information, specialist referrals, and emergency guidance. What would you like assistance with?"
+    },
+    {
+      "question": "Hey there",
+      "context": "Informal greeting interaction",
+      "answer": "Hey! I'm your medical assistant ready to help. What can I do for you today?"
+    },
+    {
+      "question": "What's up",
+      "context": "Very informal greeting",
+      "answer": "Hello! I'm here and ready to assist with any medical questions or concerns you have."
+    },
+    {
+      "question": "Greetings",
+      "context": "Formal greeting interaction",
+      "answer": "Greetings! I'm your medical assistant. How may I be of service today?"
+    },
+    {
+      "question": "Hi there!",
+      "context": "Enthusiastic greeting",
+      "answer": "Hi! I'm excited to help you with your medical needs today. What can I assist you with?"
+    },
+    {
+      "question": "Hello, are you there?",
+      "context": "Checking availability",
+      "answer": "Yes, I'm here and ready to assist you! What medical questions can I help you with today?"
+    },
+    {
+      "question": "Is anyone available?",
+      "context": "Checking service availability",
+      "answer": "Yes, I'm available and ready to help you with any medical questions or concerns you may have."
+    },
+    {
+      "question": "Can someone help me?",
+      "context": "Requesting assistance",
+      "answer": "Absolutely! I'm here to help you with any medical questions or concerns. What do you need assistance with?"
+    },
+    {
+      "question": "I need help",
+      "context": "General help request",
+      "answer": "I'm here to help you! Please let me know what medical assistance you need, and I'll guide you accordingly."
+    },
+    {
+      "question": "Could you assist me?",
+      "context": "Formal help request",
+      "answer": "Of course! I'm your medical assistant and I'm here to help. What kind of medical assistance do you need?"
+    },
+    {
+      "question": "Who are you?",
+      "context": "Identity question",
+      "answer": "I'm your medical AI assistant, designed to help with medical information, appointment booking, and healthcare guidance. How can I assist you today?"
+    },
+    {
+      "question": "What's your name?",
+      "context": "Name inquiry",
+      "answer": "I'm your medical AI assistant. I'm here to help you with medical information, appointments, and healthcare guidance. What can I help you with?"
+    },
+    {
+      "question": "Tell me about yourself",
+      "context": "Introduction request",
+      "answer": "I'm a medical AI assistant specializing in healthcare information, appointment scheduling, and medical guidance. I can help you with consultations, medical information, and emergency assistance. What would you like to know?"
+    },
+    {
+      "question": "How do I start?",
+      "context": "Initial interaction guidance",
+      "answer": "I can help you with medical consultations, appointment booking, or answer health-related questions. What would you like to start with?"
+    }
+  ],
+  "medical_qa_pairs": [
+    {
+      "question": "What are the common symptoms of COVID-19?",
+      "context": "COVID-19 symptoms can include fever or chills, cough, shortness of breath, fatigue, muscle aches, headache, loss of taste or smell, sore throat, congestion, nausea, and diarrhea. Symptoms may appear 2-14 days after exposure to the virus.",
+      "answer": "fever or chills, cough, shortness of breath, fatigue, muscle aches, headache, loss of taste or smell, sore throat, congestion, nausea, and diarrhea"
+    },
+    {
+      "question": "What are the risk factors for heart disease?",
+      "context": "Common risk factors for heart disease include age, family history, smoking, poor diet, high blood pressure, high cholesterol, diabetes, obesity, physical inactivity, and excessive alcohol use. Some risk factors can be controlled through lifestyle changes.",
+      "answer": "age, family history, smoking, poor diet, high blood pressure, high cholesterol, diabetes, obesity, physical inactivity, and excessive alcohol use"
+    },
+    {
+      "question": "What are the early signs of malaria?",
+      "context": "Malaria is a common disease in Africa transmitted by mosquitoes. Early recognition of symptoms is crucial for effective treatment. Symptoms typically appear 10-15 days after a mosquito bite.",
+      "answer": "Early signs of malaria include: 1. Fever and chills 2. Headache and body aches 3. Fatigue 4. Nausea and vomiting 5. Sweating and shivering cycles 6. Mild jaundice 7. Enlarged spleen"
+    },
+    {
+      "question": "How can I prevent malaria?",
+      "context": "Malaria prevention is crucial in endemic areas of Africa. Multiple prevention strategies can be used together for better protection.",
+      "answer": "Prevent malaria by: 1. Using insecticide-treated bed nets 2. Wearing long-sleeved clothing at dawn/dusk 3. Using mosquito repellents 4. Taking prescribed antimalarial medication 5. Eliminating standing water near homes 6. Installing window screens 7. Using indoor insecticide sprays"
+    },
+    {
+      "question": "What are the symptoms of tuberculosis?",
+      "context": "Tuberculosis (TB) remains a significant health concern in Africa. Early detection and treatment are crucial for preventing spread and complications.",
+      "answer": "TB symptoms include: 1. Persistent cough lasting over 3 weeks 2. Coughing up blood 3. Chest pain 4. Weight loss 5. Night sweats 6. Fever 7. Loss of appetite 8. Fatigue"
+    },
+    {
+      "question": "How is tuberculosis treated?",
+      "context": "TB treatment requires a long-term commitment to medication. The standard treatment involves multiple antibiotics taken for 6-9 months under medical supervision.",
+      "answer": "TB treatment involves: 1. Multiple antibiotics for 6-9 months 2. Direct Observed Therapy (DOT) 3. Regular medical check-ups 4. Sputum tests to monitor progress 5. Completing full course of medication 6. Isolation during initial infectious period"
+    },
+    {
+      "question": "What are the signs of HIV infection?",
+      "context": "HIV infection can present with various symptoms during different stages. Early recognition and testing are crucial for proper management.",
+      "answer": "Early HIV signs include: 1. Fever and chills 2. Sore throat 3. Muscle aches 4. Swollen lymph nodes 5. Rash 6. Fatigue 7. Night sweats 8. Mouth ulcers"
+    },
+    {
+      "question": "How is HIV managed in Africa?",
+      "context": "HIV management in Africa involves comprehensive care including medication, monitoring, and support services. Access to antiretroviral therapy has improved significantly.",
+      "answer": "HIV management includes: 1. Regular antiretroviral therapy 2. CD4 count monitoring 3. Viral load testing 4. Opportunistic infection prevention 5. Nutritional support 6. Counseling services 7. Support groups"
+    },
+    {
+      "question": "What are the symptoms of typhoid fever?",
+      "context": "Typhoid fever is a bacterial infection common in areas with poor sanitation. Early recognition and treatment are essential to prevent complications.",
+      "answer": "Typhoid symptoms include: 1. High fever 2. Headache 3. Abdominal pain 4. Constipation or diarrhea 5. Rose-colored spots on chest 6. Fatigue 7. Loss of appetite 8. Enlarged liver or spleen"
+    },
+    {
+      "question": "How can I prevent typhoid fever?",
+      "context": "Typhoid prevention focuses on good hygiene and safe food/water practices. Vaccination is also available for high-risk individuals.",
+      "answer": "Prevent typhoid by: 1. Drinking safe/boiled water 2. Eating well-cooked foods 3. Washing hands regularly 4. Avoiding street food 5. Getting vaccinated if recommended 6. Using clean utensils 7. Proper food storage"
+    },
+    {
+      "question": "What are the signs of severe anemia?",
+      "context": "Anemia is common in Africa, especially among children and pregnant women. It can be caused by malnutrition, parasites, or genetic conditions.",
+      "answer": "Severe anemia signs include: 1. Extreme fatigue 2. Pale skin and gums 3. Shortness of breath 4. Dizziness 5. Rapid heartbeat 6. Headaches 7. Cold hands and feet 8. Difficulty concentrating"
+    },
+    {
+      "question": "How is sickle cell disease managed?",
+      "context": "Sickle cell disease is common in Africa. Management focuses on preventing crises and treating complications.",
+      "answer": "Management includes: 1. Regular medical check-ups 2. Pain management 3. Hydration 4. Folic acid supplementation 5. Infection prevention 6. Vaccination 7. Emergency care during crises"
+    },
+    {
+      "question": "What are the symptoms of cholera?",
+      "context": "Cholera outbreaks can occur in areas with poor sanitation. Rapid recognition and treatment are crucial for survival.",
+      "answer": "Cholera symptoms include: 1. Severe watery diarrhea 2. Vomiting 3. Leg cramps 4. Rapid dehydration 5. Low blood pressure 6. Dry mouth 7. Extreme thirst 8. Rapid heart rate"
+    },
+    {
+      "question": "How is high blood pressure managed in Africa?",
+      "context": "Hypertension is increasingly common in Africa. Management combines medication with lifestyle changes.",
+      "answer": "Management includes: 1. Regular blood pressure monitoring 2. Medication adherence 3. Reduced salt intake 4. Regular exercise 5. Stress management 6. Weight control 7. Limited alcohol consumption"
+    },
+    {
+      "question": "What are the signs of diabetes in children?",
+      "context": "Childhood diabetes is increasing in Africa. Early recognition and proper management are essential.",
+      "answer": "Signs include: 1. Increased thirst 2. Frequent urination 3. Extreme hunger 4. Unexplained weight loss 5. Fatigue 6. Irritability 7. Blurred vision 8. Slow wound healing"
+    },
+    {
+      "question": "How can I manage asthma in a humid climate?",
+      "context": "Asthma management in tropical African climates requires specific strategies to deal with humidity and environmental triggers.",
+      "answer": "Management strategies: 1. Use air conditioning/dehumidifiers 2. Keep inhalers accessible 3. Avoid outdoor activities in high humidity 4. Monitor air quality 5. Regular medication use 6. Keep indoor environment clean 7. Have an asthma action plan"
+    },
+    {
+      "question": "What are the symptoms of liver disease?",
+      "context": "Liver disease can be caused by various factors including hepatitis, alcohol, or parasites. Early detection improves outcomes.",
+      "answer": "Symptoms include: 1. Jaundice 2. Abdominal pain 3. Swelling in legs/abdomen 4. Dark urine 5. Pale stools 6. Chronic fatigue 7. Loss of appetite 8. Nausea"
+    },
+    {
+      "question": "How can I prevent hepatitis B?",
+      "context": "Hepatitis B is common in Africa. Prevention through vaccination and safe practices is crucial.",
+      "answer": "Prevention methods: 1. Get vaccinated 2. Practice safe sex 3. Don't share needles 4. Use sterile medical equipment 5. Screen blood before transfusion 6. Practice good hygiene 7. Avoid sharing personal items"
+    },
+    {
+      "question": "What are the signs of severe malnutrition?",
+      "context": "Malnutrition remains a significant health issue in parts of Africa. Early recognition and intervention can save lives.",
+      "answer": "Signs include: 1. Severe weight loss 2. Swollen belly/feet 3. Thin, brittle hair 4. Dry, scaly skin 5. Delayed growth 6. Weakened immune system 7. Irritability 8. Lethargy"
+    },
+    {
+      "question": "How can I prevent food-borne illness?",
+      "context": "Food safety is crucial in warm climates where food can spoil quickly. Proper handling and storage are essential.",
+      "answer": "Prevention methods: 1. Cook food thoroughly 2. Store food properly 3. Wash hands before handling food 4. Clean utensils and surfaces 5. Separate raw and cooked foods 6. Refrigerate perishables 7. Use safe water for washing"
+    },
+    {
+      "question": "What are the signs of severe dehydration?",
+      "context": "Dehydration is common in hot African climates and can be dangerous, especially for children and elderly.",
+      "answer": "Signs include: 1. Dark urine 2. Extreme thirst 3. Dry mouth/lips 4. Sunken eyes 5. Reduced skin elasticity 6. Rapid breathing 7. Fast heartbeat 8. Lethargy"
+    },
+    {
+      "question": "What prenatal care is essential during pregnancy?",
+      "context": "Proper prenatal care is crucial for maternal and fetal health. Regular check-ups and proper nutrition can prevent many complications.",
+      "answer": "Essential prenatal care includes: 1. Regular antenatal visits 2. Folic acid supplementation 3. Iron supplementation 4. Tetanus vaccination 5. Blood pressure monitoring 6. HIV testing 7. Malaria prevention 8. Proper nutrition guidance"
+    },
+    {
+      "question": "What are the danger signs during pregnancy?",
+      "context": "Recognizing pregnancy danger signs is crucial for preventing maternal mortality. Immediate medical attention should be sought if these signs appear.",
+      "answer": "Danger signs include: 1. Severe headache 2. Blurred vision 3. Severe abdominal pain 4. Vaginal bleeding 5. Reduced fetal movement 6. Swelling of face/hands 7. High fever 8. Convulsions"
+    },
+    {
+      "question": "How can I ensure safe breastfeeding?",
+      "context": "Proper breastfeeding technique and hygiene are essential for infant nutrition and health. Exclusive breastfeeding is recommended for the first 6 months.",
+      "answer": "Safe breastfeeding tips: 1. Proper latching technique 2. Regular feeding schedule 3. Good maternal nutrition 4. Hand hygiene 5. Comfortable feeding position 6. Adequate hydration 7. Recognition of feeding cues 8. Proper breast care"
+    },
+    {
+      "question": "What vaccinations does my child need?",
+      "context": "Childhood immunization is crucial for preventing serious diseases. The African vaccination schedule includes additional vaccines for region-specific diseases.",
+      "answer": "Essential vaccinations include: 1. BCG (tuberculosis) 2. Polio 3. DPT (diphtheria, pertussis, tetanus) 4. Measles 5. Yellow fever 6. Pneumococcal 7. Rotavirus 8. Meningitis A"
+    },
+    {
+      "question": "What are signs of postpartum depression?",
+      "context": "Postpartum depression is often underrecognized in African communities. Early recognition and support are crucial for maternal mental health.",
+      "answer": "Signs include: 1. Persistent sadness 2. Loss of interest 3. Difficulty bonding with baby 4. Changes in sleep/appetite 5. Excessive worry about baby 6. Thoughts of self-harm 7. Feeling overwhelmed 8. Social withdrawal"
+    },
+    {
+      "question": "What are signs of anxiety disorder?",
+      "context": "Anxiety disorders are increasingly common but often stigmatized in African communities. Recognition and proper treatment can significantly improve quality of life.",
+      "answer": "Signs include: 1. Excessive worry 2. Restlessness 3. Difficulty concentrating 4. Sleep problems 5. Physical symptoms (rapid heartbeat, sweating) 6. Social avoidance 7. Panic attacks 8. Constant fear"
+    },
+    {
+      "question": "How is depression treated in traditional African medicine?",
+      "context": "Traditional African medicine often uses a holistic approach to mental health, combining herbal remedies with spiritual and social support.",
+      "answer": "Traditional approaches include: 1. Herbal remedies 2. Community support groups 3. Spiritual ceremonies 4. Physical exercise 5. Dietary modifications 6. Family counseling 7. Meditation practices 8. Social reintegration"
+    },
+    {
+      "question": "What are the symptoms of dengue fever?",
+      "context": "Dengue fever is a mosquito-borne tropical disease. Early recognition of symptoms is crucial for proper management.",
+      "answer": "Symptoms include: 1. High fever 2. Severe headache 3. Joint/muscle pain 4. Rash 5. Eye pain 6. Nausea/vomiting 7. Bleeding gums/nose 8. Extreme fatigue"
+    },
+    {
+      "question": "How is yellow fever prevented?",
+      "context": "Yellow fever is a serious viral disease transmitted by mosquitoes. Vaccination and prevention measures are crucial in endemic areas.",
+      "answer": "Prevention methods: 1. Vaccination 2. Mosquito nets 3. Insect repellent 4. Protective clothing 5. Window screens 6. Eliminating breeding sites 7. Community surveillance 8. Travel precautions"
+    },
+    {
+      "question": "What are signs of schistosomiasis?",
+      "context": "Schistosomiasis (bilharzia) is common in areas with poor sanitation and access to clean water. Early treatment prevents complications.",
+      "answer": "Signs include: 1. Abdominal pain 2. Bloody urine/stool 3. Fever 4. Fatigue 5. Itchy skin 6. Muscle aches 7. Cough 8. Weight loss"
+    },
+    {
+      "question": "How can I prevent lifestyle diseases?",
+      "context": "Lifestyle diseases are increasing in Africa due to changing dietary and activity patterns. Prevention through healthy habits is crucial.",
+      "answer": "Prevention strategies: 1. Regular exercise 2. Balanced diet 3. Limited processed foods 4. Stress management 5. Regular health checks 6. Adequate sleep 7. Limited alcohol 8. No smoking"
+    },
+    {
+      "question": "What vaccinations are needed for travel in Africa?",
+      "context": "Different regions in Africa require specific vaccinations for disease prevention. Consultation with healthcare providers before travel is important.",
+      "answer": "Common vaccinations: 1. Yellow fever 2. Hepatitis A/B 3. Meningitis 4. Typhoid 5. Cholera 6. Polio booster 7. Routine updates 8. Malaria prophylaxis"
+    },
+    {
+      "question": "How does traditional medicine treat malaria?",
+      "context": "Traditional African medicine has long-established treatments for malaria, often using local herbs and plants. These should be used in consultation with healthcare providers.",
+      "answer": "Traditional approaches include: 1. Bitter herbs 2. Fever reduction techniques 3. Hydration practices 4. Rest protocols 5. Dietary restrictions 6. Herbal teas 7. Spiritual healing 8. Community support"
+    },
+    {
+      "question": "What are emergency signs in children?",
+      "context": "Recognizing emergency signs in children is crucial for timely intervention. These signs require immediate medical attention.",
+      "answer": "Emergency signs: 1. Difficulty breathing 2. Severe dehydration 3. Prolonged seizures 4. Unconsciousness 5. Severe vomiting 6. High fever with stiff neck 7. Severe burns 8. Major injuries"
+    },
+    {
+      "question": "How do I handle snake bites?",
+      "context": "Snake bites are common in rural Africa. Proper first aid and quick medical attention are essential for survival.",
+      "answer": "First aid steps: 1. Keep calm 2. Immobilize limb 3. Remove constricting items 4. Clean wound 5. Note snake appearance 6. Seek immediate medical help 7. Avoid traditional cutting 8. No tourniquet"
+    },
+    {
+      "question": "What are signs of stroke?",
+      "context": "Stroke is increasingly common in Africa. Quick recognition and response improve outcomes. Remember the FAST acronym.",
+      "answer": "Signs include: 1. Face drooping 2. Arm weakness 3. Speech difficulty 4. Time to call emergency 5. Sudden confusion 6. Severe headache 7. Vision problems 8. Balance loss"
+    },
+    {
+      "question": "How is traditional medicine integrated with modern healthcare?",
+      "context": "Many African healthcare systems are working to integrate traditional and modern medicine for better patient outcomes.",
+      "answer": "Integration methods: 1. Collaborative clinics 2. Research partnerships 3. Standardized practices 4. Quality control 5. Patient education 6. Referral systems 7. Documentation 8. Safety monitoring"
+    },
+    {
+      "question": "What mental health support is available in rural areas?",
+      "context": "Mental health services in rural Africa often combine traditional support systems with modern approaches.",
+      "answer": "Available support: 1. Community health workers 2. Religious leaders 3. Traditional healers 4. Support groups 5. Mobile clinics 6. Teletherapy 7. Family counseling 8. Crisis hotlines"
+    },
+    {
+      "question": "What are the early warning signs of diabetes?",
+      "context": "Diabetes is becoming increasingly common in Africa due to changing lifestyles. Early detection is crucial for better management.",
+      "answer": "Early signs include: 1. Frequent urination 2. Excessive thirst 3. Unexplained weight loss 4. Constant hunger 5. Blurred vision 6. Slow-healing wounds 7. Frequent infections 8. Fatigue"
+    },
+    {
+      "question": "How do I recognize diabetes symptoms?",
+      "context": "Different people may experience different diabetes symptoms. Understanding various presentations helps in early detection.",
+      "answer": "Common symptoms: 1. Dry mouth 2. Increased appetite 3. Numbness in hands/feet 4. Irritability 5. Dark patches on skin 6. Sudden vision changes 7. Recurring thrush 8. Dehydration despite drinking"
+    },
+    {
+      "question": "What are high blood pressure warning signs?",
+      "context": "Hypertension often has no obvious symptoms, making it dangerous. Regular monitoring is essential.",
+      "answer": "Warning signs may include: 1. Morning headaches 2. Nosebleeds 3. Irregular heartbeat 4. Vision problems 5. Chest pain 6. Difficulty breathing 7. Blood in urine 8. Dizziness"
+    },
+    {
+      "question": "How can I tell if my blood pressure is high?",
+      "context": "While a blood pressure monitor is most accurate, there are physical signs that might indicate hypertension.",
+      "answer": "Possible indicators: 1. Severe headaches 2. Fatigue 3. Confusion 4. Chest pain 5. Ear noise/buzzing 6. Irregular heartbeat 7. Blood spots in eyes 8. Face flushing"
+    },
+    {
+      "question": "What are signs of heart problems?",
+      "context": "Heart disease presents differently in different people. Some signs are subtle while others are more obvious.",
+      "answer": "Common signs: 1. Chest discomfort 2. Shortness of breath 3. Upper body pain 4. Cold sweats 5. Nausea 6. Lightheadedness 7. Jaw pain 8. Unusual fatigue"
+    },
+    {
+      "question": "How do I know if I'm having heart issues?",
+      "context": "Heart problems can manifest in various ways, especially in women who may have different symptoms than men.",
+      "answer": "Watch for: 1. Arm/shoulder pain 2. Unusual tiredness 3. Sleep problems 4. Anxiety 5. Indigestion 6. Back pain 7. Irregular pulse 8. Swollen ankles"
+    },
+    {
+      "question": "What are common digestive problems?",
+      "context": "Digestive issues are often influenced by diet, stress, and lifestyle factors. Many are preventable with proper care.",
+      "answer": "Common issues: 1. Acid reflux 2. Constipation 3. Diarrhea 4. Bloating 5. Stomach pain 6. Food intolerance 7. Nausea 8. Loss of appetite"
+    },
+    {
+      "question": "How can I improve my digestion?",
+      "context": "Good digestive health is crucial for overall wellbeing. Both modern and traditional approaches can help.",
+      "answer": "Tips include: 1. Regular meals 2. Proper chewing 3. Fiber-rich diet 4. Adequate water 5. Regular exercise 6. Stress management 7. Probiotics 8. Limited processed foods"
+    },
+    {
+      "question": "What are signs of liver problems?",
+      "context": "Liver disease is increasing in Africa. Early detection and lifestyle changes can prevent serious complications.",
+      "answer": "Signs include: 1. Yellow skin/eyes 2. Abdominal pain 3. Swollen abdomen 4. Dark urine 5. Pale stools 6. Itchy skin 7. Easy bruising 8. Chronic fatigue"
+    },
+    {
+      "question": "How do I keep my liver healthy?",
+      "context": "Liver health is essential for overall wellbeing. Prevention is better than cure for liver diseases.",
+      "answer": "Health tips: 1. Limit alcohol 2. Balanced diet 3. Regular exercise 4. Hepatitis vaccination 5. Safe sex practices 6. Clean drinking water 7. Avoid toxins 8. Regular checkups"
+    },
+    {
+      "question": "What causes chronic headaches?",
+      "context": "Headaches can have many causes, from simple tension to serious conditions. Understanding the type helps in treatment.",
+      "answer": "Common causes: 1. Stress 2. Dehydration 3. Eye strain 4. Poor posture 5. Sleep issues 6. Diet triggers 7. Hormonal changes 8. High blood pressure"
+    },
+    {
+      "question": "How can I prevent frequent headaches?",
+      "context": "Prevention strategies combine lifestyle changes with identifying and avoiding triggers.",
+      "answer": "Prevention tips: 1. Regular sleep 2. Stress management 3. Good posture 4. Proper hydration 5. Regular meals 6. Exercise 7. Eye breaks 8. Trigger avoidance"
+    },
+    {
+      "question": "What are signs of kidney problems?",
+      "context": "Kidney disease is often silent until advanced stages. Regular screening is important, especially with risk factors.",
+      "answer": "Warning signs: 1. Changes in urination 2. Swelling 3. Fatigue 4. Back pain 5. Skin changes 6. Metallic taste 7. Nausea 8. Poor appetite"
+    },
+    {
+      "question": "How do I maintain healthy kidneys?",
+      "context": "Kidney health is vital for overall wellbeing. Prevention focuses on lifestyle and managing risk factors.",
+      "answer": "Maintenance tips: 1. Stay hydrated 2. Control blood pressure 3. Healthy diet 4. Regular exercise 5. Limited salt 6. No smoking 7. Moderate protein 8. Regular checkups"
+    },
+    {
+      "question": "What are signs of malnutrition?",
+      "context": "Malnutrition remains a challenge in many African communities. Recognition of signs enables early intervention.",
+      "answer": "Signs include: 1. Weight loss 2. Weakness 3. Delayed healing 4. Frequent illness 5. Hair loss 6. Dry skin 7. Mood changes 8. Poor concentration"
+    },
+    {
+      "question": "How can I ensure proper nutrition?",
+      "context": "Good nutrition is possible even with limited resources. Local foods often provide excellent nutritional value.",
+      "answer": "Guidelines: 1. Varied diet 2. Local vegetables 3. Protein sources 4. Whole grains 5. Fresh fruits 6. Clean preparation 7. Regular meals 8. Proper storage"
+    },
+    {
+      "question": "What are signs of respiratory problems?",
+      "context": "Respiratory issues are common in both urban and rural areas. Air quality and lifestyle factors play important roles.",
+      "answer": "Signs include: 1. Persistent cough 2. Wheezing 3. Shortness of breath 4. Chest pain 5. Mucus production 6. Night sweating 7. Fatigue 8. Blue lips/fingers"
+    },
+    {
+      "question": "How can I improve my lung health?",
+      "context": "Lung health is crucial for overall wellbeing. Both prevention and maintenance are important.",
+      "answer": "Tips include: 1. No smoking 2. Clean air 3. Regular exercise 4. Deep breathing 5. Good ventilation 6. Dust prevention 7. Regular cleaning 8. Proper masks"
+    },
+    {
+      "question": "What does a cardiologist do?",
+      "context": "Cardiologists are specialists in heart and blood vessel conditions. They provide both preventive and acute care.",
+      "answer": "A cardiologist: 1. Diagnoses heart conditions 2. Treats heart disease 3. Performs heart tests 4. Manages blood pressure 5. Treats arrhythmias 6. Prevents heart disease 7. Monitors cholesterol 8. Manages heart medications"
+    },
+    {
+      "question": "When should I see a cardiologist?",
+      "context": "Knowing when to see a heart specialist can be lifesaving. Some conditions require immediate cardiac attention.",
+      "answer": "See a cardiologist for: 1. Chest pain 2. Irregular heartbeat 3. High blood pressure 4. Heart attack history 5. Family heart disease 6. Diabetes complications 7. Smoking-related issues 8. Pregnancy heart concerns"
+    },
+    {
+      "question": "What does a neurologist treat?",
+      "context": "Neurologists specialize in brain, spine, and nerve conditions. They handle both common and complex neurological issues.",
+      "answer": "Neurologists treat: 1. Headaches/migraines 2. Epilepsy 3. Stroke 4. Multiple sclerosis 5. Parkinson's disease 6. Nerve pain 7. Memory problems 8. Spinal cord issues"
+    },
+    {
+      "question": "When should I consult a neurologist?",
+      "context": "Neurological symptoms can be complex. Knowing when to see a specialist ensures proper diagnosis and treatment.",
+      "answer": "Consult when having: 1. Severe headaches 2. Seizures 3. Balance problems 4. Vision changes 5. Numbness/tingling 6. Memory loss 7. Muscle weakness 8. Coordination issues"
+    },
+    {
+      "question": "What does a gynecologist do?",
+      "context": "Gynecologists specialize in women's reproductive health. Regular visits are important for preventive care.",
+      "answer": "Services include: 1. Reproductive care 2. Pregnancy planning 3. Cancer screening 4. STI treatment 5. Menstrual issues 6. Fertility care 7. Menopause management 8. Family planning"
+    },
+    {
+      "question": "When should I visit a gynecologist?",
+      "context": "Regular gynecological care is essential for women's health. Certain symptoms require immediate attention.",
+      "answer": "Visit for: 1. Annual checkups 2. Irregular periods 3. Pregnancy planning 4. Pelvic pain 5. Breast changes 6. STI concerns 7. Unusual discharge 8. Menopause symptoms"
+    },
+    {
+      "question": "What does a pediatrician do?",
+      "context": "Pediatricians specialize in child health from birth through adolescence. They provide both preventive and acute care.",
+      "answer": "They provide: 1. Growth monitoring 2. Vaccinations 3. Development checks 4. Illness treatment 5. Nutrition guidance 6. Behavior assessment 7. Emergency care 8. Health education"
+    },
+    {
+      "question": "When should I take my child to a pediatrician?",
+      "context": "Regular pediatric visits are crucial for child health. Some situations require immediate attention.",
+      "answer": "Visit for: 1. Regular checkups 2. Vaccination schedule 3. High fever 4. Growth concerns 5. Behavioral issues 6. Eating problems 7. Developmental delays 8. Chronic conditions"
+    },
+    {
+      "question": "What does a dermatologist treat?",
+      "context": "Dermatologists specialize in skin, hair, and nail conditions. They handle both medical and cosmetic issues.",
+      "answer": "They treat: 1. Skin infections 2. Acne 3. Skin cancer 4. Hair loss 5. Eczema 6. Psoriasis 7. Nail disorders 8. Skin allergies"
+    },
+    {
+      "question": "When should I see a dermatologist?",
+      "context": "Some skin conditions require specialist care. Early intervention can prevent complications.",
+      "answer": "Consult for: 1. Persistent rash 2. Changing moles 3. Severe acne 4. Skin infections 5. Hair problems 6. Nail diseases 7. Chronic itching 8. Skin growths"
+    },
+    {
+      "question": "What does an orthopedist do?",
+      "context": "Orthopedists specialize in bone and joint conditions. They treat both acute injuries and chronic conditions.",
+      "answer": "They handle: 1. Broken bones 2. Joint problems 3. Sports injuries 4. Arthritis 5. Back pain 6. Spine issues 7. Joint replacements 8. Muscle injuries"
+    },
+    {
+      "question": "When should I visit an orthopedist?",
+      "context": "Bone and joint problems can significantly impact quality of life. Timely intervention is important.",
+      "answer": "Visit for: 1. Joint pain 2. Fractures 3. Sports injuries 4. Back problems 5. Arthritis pain 6. Limited mobility 7. Recurring injuries 8. Bone deformities"
+    },
+    {
+      "question": "What does a psychiatrist do?",
+      "context": "Psychiatrists are medical doctors specializing in mental health. They can prescribe medications and provide therapy.",
+      "answer": "They provide: 1. Mental health diagnosis 2. Medication management 3. Therapy 4. Depression treatment 5. Anxiety care 6. Crisis intervention 7. Addiction treatment 8. Behavioral therapy"
+    },
+    {
+      "question": "When should I consult a psychiatrist?",
+      "context": "Mental health is as important as physical health. Professional help can improve quality of life.",
+      "answer": "Seek help for: 1. Depression 2. Anxiety 3. Panic attacks 4. Addiction 5. Eating disorders 6. Sleep problems 7. Mood changes 8. Suicidal thoughts"
+    },
+    {
+      "question": "What does an ENT specialist do?",
+      "context": "ENT (Ear, Nose, and Throat) specialists treat conditions affecting these connected areas and related structures.",
+      "answer": "They treat: 1. Ear infections 2. Hearing problems 3. Sinus issues 4. Throat infections 5. Voice disorders 6. Sleep apnea 7. Allergies 8. Balance disorders"
+    },
+    {
+      "question": "When should I see an ENT specialist?",
+      "context": "ENT problems can affect daily life significantly. Some conditions require specialist intervention.",
+      "answer": "Consult for: 1. Hearing loss 2. Chronic sinusitis 3. Frequent tonsillitis 4. Voice changes 5. Difficulty swallowing 6. Persistent ear pain 7. Balance problems 8. Snoring issues"
+    },
+    {
+      "question": "What does an endocrinologist do?",
+      "context": "Endocrinologists specialize in hormone-related conditions affecting various body systems.",
+      "answer": "They treat: 1. Diabetes 2. Thyroid disorders 3. Hormone imbalances 4. Growth issues 5. Metabolic disorders 6. Osteoporosis 7. Adrenal problems 8. Pituitary conditions"
+    },
+    {
+      "question": "When should I visit an endocrinologist?",
+      "context": "Hormonal imbalances can affect multiple body systems. Specialist care ensures proper management.",
+      "answer": "Visit for: 1. Diabetes management 2. Thyroid problems 3. Weight issues 4. Growth concerns 5. Metabolic issues 6. Hormone imbalances 7. Bone density problems 8. Gland disorders"
+    },
+    {
+      "question": "What does an ophthalmologist do?",
+      "context": "Ophthalmologists are medical doctors specializing in eye and vision care. They provide both medical and surgical treatments.",
+      "answer": "They provide: 1. Vision testing 2. Eye disease treatment 3. Eye surgery 4. Glasses/contact prescriptions 5. Glaucoma treatment 6. Cataract surgery 7. Retinal care 8. Eye injury treatment"
+    },
+    {
+      "question": "When should I see an ophthalmologist?",
+      "context": "Regular eye check-ups are important for vision health. Some conditions require immediate specialist attention.",
+      "answer": "Visit for: 1. Vision changes 2. Eye pain 3. Eye injuries 4. Frequent headaches 5. Family eye disease 6. Diabetes-related issues 7. Age-related changes 8. Eye emergencies"
+    },
+    {
+      "question": "What does a urologist treat?",
+      "context": "Urologists specialize in urinary tract and male reproductive system conditions. They handle both medical and surgical cases.",
+      "answer": "They treat: 1. Kidney stones 2. Bladder problems 3. Prostate issues 4. Urinary infections 5. Male infertility 6. Erectile dysfunction 7. Urinary cancers 8. Incontinence"
+    },
+    {
+      "question": "When should I consult a urologist?",
+      "context": "Urological problems can significantly impact quality of life. Early intervention often leads to better outcomes.",
+      "answer": "Consult for: 1. Frequent urination 2. Urinary pain 3. Blood in urine 4. Kidney stones 5. Prostate problems 6. Sexual dysfunction 7. Urinary leakage 8. Pelvic pain"
+    },
+    {
+      "question": "What does a pulmonologist do?",
+      "context": "Pulmonologists are lung specialists who diagnose and treat respiratory conditions. They handle both acute and chronic conditions.",
+      "answer": "They treat: 1. Asthma 2. COPD 3. Lung cancer 4. Tuberculosis 5. Sleep apnea 6. Pneumonia 7. Bronchitis 8. Respiratory failure"
+    },
+    {
+      "question": "When should I see a pulmonologist?",
+      "context": "Respiratory problems can be serious. Knowing when to see a specialist is crucial for proper treatment.",
+      "answer": "Visit for: 1. Persistent cough 2. Breathing difficulty 3. Chest pain 4. Chronic bronchitis 5. Sleep problems 6. Unexplained fatigue 7. Blood in sputum 8. Recurring pneumonia"
+    },
+    {
+      "question": "What does a gastroenterologist do?",
+      "context": "Gastroenterologists specialize in digestive system disorders. They diagnose and treat conditions affecting the entire digestive tract.",
+      "answer": "They treat: 1. Acid reflux 2. Ulcers 3. Colon cancer 4. IBD/IBS 5. Liver disease 6. Gallbladder issues 7. Pancreas problems 8. Digestive cancers"
+    },
+    {
+      "question": "When should I visit a gastroenterologist?",
+      "context": "Digestive problems can significantly impact daily life. Some symptoms require specialist evaluation.",
+      "answer": "Visit for: 1. Chronic heartburn 2. Abdominal pain 3. Blood in stool 4. Difficulty swallowing 5. Unexplained weight loss 6. Chronic diarrhea 7. Liver problems 8. Persistent nausea"
+    },
+    {
+      "question": "What does a rheumatologist treat?",
+      "context": "Rheumatologists specialize in autoimmune and joint diseases. They handle complex conditions affecting multiple body systems.",
+      "answer": "They treat: 1. Rheumatoid arthritis 2. Lupus 3. Scleroderma 4. Vasculitis 5. Gout 6. Fibromyalgia 7. Osteoarthritis 8. Autoimmune diseases"
+    },
+    {
+      "question": "When should I see a rheumatologist?",
+      "context": "Autoimmune conditions can be complex. Early diagnosis and treatment can prevent complications.",
+      "answer": "Consult for: 1. Joint pain 2. Morning stiffness 3. Muscle weakness 4. Unexplained fever 5. Skin rashes 6. Fatigue 7. Multiple joint swelling 8. Family history"
+    },
+    {
+      "question": "What does an oncologist do?",
+      "context": "Oncologists are cancer specialists who diagnose and treat various types of cancer. They often work with a team of specialists.",
+      "answer": "They provide: 1. Cancer diagnosis 2. Chemotherapy 3. Treatment planning 4. Radiation referrals 5. Surgery coordination 6. Pain management 7. Follow-up care 8. Clinical trials"
+    },
+    {
+      "question": "When should I consult an oncologist?",
+      "context": "Early cancer detection and treatment improve outcomes. Some symptoms require immediate evaluation.",
+      "answer": "Consult for: 1. Unusual lumps 2. Unexplained weight loss 3. Persistent pain 4. Abnormal bleeding 5. Suspicious moles 6. Chronic fatigue 7. Screening results 8. Family cancer history"
+    },
+    {
+      "question": "What types of oncologists are there?",
+      "context": "There are different types of oncologists specializing in various cancer treatments. Understanding their roles helps in cancer care.",
+      "answer": "Types include: 1. Medical oncologist 2. Surgical oncologist 3. Radiation oncologist 4. Pediatric oncologist 5. Gynecologic oncologist 6. Hematologist-oncologist 7. Neuro-oncologist 8. Thoracic oncologist"
+    },
+    {
+      "question": "What cancer screening tests should I get?",
+      "context": "Regular cancer screening is crucial for early detection. Different tests are recommended based on age, gender, and risk factors.",
+      "answer": "Common screenings: 1. Mammogram 2. Colonoscopy 3. Pap smear 4. Prostate exam 5. Skin check 6. Lung CT scan 7. Blood tests 8. Genetic testing"
+    },
+    {
+      "question": "What are the different types of cancer specialists?",
+      "context": "Cancer treatment often requires a team of specialists. Each type focuses on specific aspects of cancer care.",
+      "answer": "Specialists include: 1. Medical Oncologist (chemotherapy) 2. Radiation Oncologist (radiation therapy) 3. Surgical Oncologist (cancer surgery) 4. Hematologist-Oncologist (blood cancers) 5. Gynecologic Oncologist (women's cancers) 6. Pediatric Oncologist (childhood cancers) 7. Neuro-Oncologist (brain cancers) 8. Thoracic Oncologist (lung cancers)"
+    },
+    {
+      "question": "What does each cancer specialist do?",
+      "context": "Different cancer specialists have specific roles in cancer treatment. Understanding their roles helps in comprehensive care.",
+      "answer": "Roles include: 1. Medical Oncologist (manages overall treatment) 2. Radiation Oncologist (plans radiation) 3. Surgical Oncologist (removes tumors) 4. Pathologist (analyzes tissues) 5. Radiologist (interprets scans) 6. Pain Specialist (manages symptoms) 7. Palliative Care (quality of life) 8. Oncology Nurse (daily care)"
+    },
+    {
+      "question": "What diagnostic procedures are used for cancer?",
+      "context": "Cancer diagnosis involves various tests and procedures. Early detection improves treatment outcomes.",
+      "answer": "Procedures include: 1. Blood tests 2. Imaging scans (CT/MRI/PET) 3. Biopsies 4. Endoscopy 5. Genetic testing 6. Tumor markers 7. Bone marrow tests 8. Physical examinations"
+    },
+    {
+      "question": "What imaging tests are used for cancer diagnosis?",
+      "context": "Different imaging tests help detect and monitor cancer. Each type provides specific information about cancer.",
+      "answer": "Tests include: 1. X-rays 2. CT scans 3. MRI scans 4. PET scans 5. Ultrasound 6. Mammography 7. Nuclear medicine 8. Bone scans"
+    },
+    {
+      "question": "What are common cancer treatments?",
+      "context": "Cancer treatment usually involves multiple approaches. Treatment plans are personalized based on cancer type and stage.",
+      "answer": "Treatments include: 1. Surgery 2. Chemotherapy 3. Radiation therapy 4. Immunotherapy 5. Targeted therapy 6. Hormone therapy 7. Stem cell transplant 8. Clinical trials"
+    },
+    {
+      "question": "What are chemotherapy side effects?",
+      "context": "Chemotherapy can cause various side effects. Understanding and managing them is crucial for treatment success.",
+      "answer": "Side effects include: 1. Nausea/vomiting 2. Hair loss 3. Fatigue 4. Low blood counts 5. Infection risk 6. Mouth sores 7. Appetite changes 8. Skin changes"
+    },
+    {
+      "question": "What are cancer prevention guidelines?",
+      "context": "Many cancers can be prevented through lifestyle changes and regular screening. Prevention is better than cure.",
+      "answer": "Guidelines include: 1. No smoking 2. Limited alcohol 3. Healthy diet 4. Regular exercise 5. Sun protection 6. Regular screenings 7. Vaccinations (HPV/Hepatitis) 8. Weight management"
+    },
+    {
+      "question": "What lifestyle changes prevent cancer?",
+      "context": "Healthy lifestyle choices can significantly reduce cancer risk. Small changes can make a big difference.",
+      "answer": "Changes include: 1. Quit smoking 2. Reduce alcohol 3. Eat more vegetables 4. Limit processed foods 5. Stay active 6. Maintain weight 7. Protect from sun 8. Reduce stress"
+    },
+    {
+      "question": "What are cancer emergency situations?",
+      "context": "Some cancer-related situations require immediate medical attention. Recognizing these is crucial for patient safety.",
+      "answer": "Emergencies include: 1. High fever 2. Severe pain 3. Difficulty breathing 4. Uncontrolled bleeding 5. Severe vomiting 6. Mental changes 7. Seizures 8. Severe weakness"
+    },
+    {
+      "question": "When should cancer patients seek emergency care?",
+      "context": "Certain symptoms in cancer patients require immediate medical attention. Quick response can prevent complications.",
+      "answer": "Seek care for: 1. Fever above 38°C 2. Severe chest pain 3. Sudden confusion 4. Uncontrolled nausea 5. New severe pain 6. Difficulty breathing 7. Unusual bleeding 8. Severe fatigue"
+    },
+    {
+      "question": "What does cancer follow-up care involve?",
+      "context": "Follow-up care is crucial after cancer treatment. Regular monitoring helps detect recurrence early.",
+      "answer": "Care includes: 1. Regular check-ups 2. Screening tests 3. Side effect monitoring 4. Lifestyle counseling 5. Mental health support 6. Nutrition guidance 7. Physical therapy 8. Survivorship planning"
+    },
+    {
+      "question": "How often should cancer survivors have check-ups?",
+      "context": "Follow-up frequency depends on cancer type and treatment history. Regular monitoring is essential for early detection of recurrence.",
+      "answer": "Guidelines include: 1. Every 3-6 months (first year) 2. Every 6 months (2-3 years) 3. Yearly after 5 years 4. Regular imaging 5. Blood tests 6. Physical exams 7. Symptom monitoring 8. Lifestyle reviews"
+    },
+    {
+      "question": "What support services do cancer patients need?",
+      "context": "Cancer care extends beyond medical treatment. Comprehensive support improves outcomes and quality of life.",
+      "answer": "Services include: 1. Mental health counseling 2. Nutritional support 3. Physical therapy 4. Support groups 5. Financial counseling 6. Home care services 7. Pain management 8. Family support"
+    },
+    {
+      "question": "How is cancer pain managed?",
+      "context": "Pain management is crucial in cancer care. Different approaches are used based on pain type and severity.",
+      "answer": "Methods include: 1. Pain medications 2. Nerve blocks 3. Physical therapy 4. Relaxation techniques 5. Radiation therapy 6. Surgery 7. Alternative therapies 8. Psychological support"
+    }
+  ],
+  "appointment_interactions": [
+    {
+      "question": "I want to book an appointment",
+      "context": "User requesting to schedule a medical appointment",
+      "answer": "I'll help you book an appointment. First, we'll need to process the appointment fee via M-PESA. Once the payment is confirmed, you can choose your preferred date and time."
+    },
+    {
+      "question": "How do I make an appointment?",
+      "context": "User asking about the appointment booking process",
+      "answer": "I can help you schedule an appointment. The process involves: 1. Processing the appointment fee via M-PESA 2. Selecting your preferred date and time 3. Confirming your booking. Would you like to proceed?"
+    },
+    {
+      "question": "What's the appointment fee?",
+      "context": "User inquiring about the cost of an appointment",
+      "answer": "The appointment fee is KES 1000. This can be paid easily via M-PESA. Would you like to proceed with booking an appointment?"
+    },
+    {
+      "question": "Can I reschedule my appointment?",
+      "context": "User requesting to change their appointment time",
+      "answer": "Yes, you can reschedule your appointment. Please provide your previous appointment details, and I'll help you find a new suitable time."
+    }
+  ],
+  "emergency_responses": [
+    {
+      "question": "I'm having chest pain",
+      "context": "User reporting potential heart attack symptoms",
+      "answer": "If you're experiencing chest pain, please seek emergency medical attention immediately. Call emergency services or go to the nearest emergency room. This could be a serious condition requiring immediate medical care."
+    },
+    {
+      "question": "I'm having difficulty breathing",
+      "context": "User reporting severe respiratory distress",
+      "answer": "Difficulty breathing is a serious emergency. Please call emergency services immediately or go to the nearest emergency room. Do not wait or delay seeking medical attention."
+    },
+    {
+      "question": "I'm feeling suicidal",
+      "context": "User expressing thoughts of self-harm",
+      "answer": "I'm very concerned about your safety. Please call the suicide prevention hotline immediately at [EMERGENCY_NUMBER]. You're not alone, and help is available 24/7. If you're in immediate danger, call emergency services right away."
+    }
+  ]
+}
